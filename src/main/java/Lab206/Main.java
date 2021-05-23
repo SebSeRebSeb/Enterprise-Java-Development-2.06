@@ -12,10 +12,12 @@ public class Main {
         studentlist.put("stephan", new Student("Stephan Bergmann", 60));
         studentlist.put("frauke", new Student("Frauke Zaunmann", 20));
         studentlist.put("melinda", new Student("Melinda Sandmann", 80));
+        studentlist.put("tim", new Student("Tim Acosta", -10));
 
         studentlist.get("frank").setGrade(32);
         add10PercentMark(studentlist);
         System.out.println(studentlist.get("frank").getGrade());
+        System.out.println(studentlist.get("tim").getGrade());
     }
     public static HashMap<String,Student> add10PercentMark(HashMap<String, Student> a){
 

@@ -10,7 +10,9 @@ public class Student {
     }
 
     public void setGrade(int grade) {
-        if (grade < 100) {
+        if(grade < 0) {
+            throw new IllegalArgumentException("Grade lower than 0");
+        } else if (grade < 100) {
             this.grade = grade;
         }else {
             this.grade=100;
